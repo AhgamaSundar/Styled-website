@@ -40,3 +40,10 @@ button:hover{
   background-color: rgb(102, 40, 172);
   border-color:rgb(114, 71, 163)
 }
+.radio{
+  display: flex;
+}
+.radio input{
+  width: auto;
+  margin-right: 0.5rem;
+}

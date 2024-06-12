@@ -14,6 +14,34 @@
     <form action="/" method="GET">
       <label for="uname">Your name</label>
       <input type="text" name="user-name" id="uname" />
+      <label for="mail">Email</label>
+      <input type="email" name="user-mail" id="mail" />
+      <label for="uage">Age</label>
+      <input type="number" step="100" name="age" id="uage" />
+      <label for="psswd">Password</label>
+      <input type="password" id="psswd" name="password" />
+      <label for="dte">Date</label>
+      <input type="date" name="date" id="dte" />
+      <hr />
+      <h2>Verification method</h2>
+      <div class="radio">
+        <input type="radio" name="veri" id="txt" value="text" />
+        <label for="txt">Via text</label>
+      </div>
+      <div class="radio">
+        <input type="radio" name="veri" id="email" value="mail" />
+        <label for="email">Via an email</label>
+      </div>
+      <div class="radio">
+        <input type="radio" name="veri" id="call" value="pcall" />
+        <label for="call">Via phone call</label>
+      </div>
+      <div class="radio">
+        <input type="checkbox" id="terms"/>
+        <label for="terms">Sell your soul ?</label>
+
+      </div>
+
       <button>Click me!</button>
     </form>
   </body>
