@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Fourm</title>
+    <title>Form</title>
   </head>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,18 +11,29 @@
   />
   <link rel="stylesheet" href="index.css" />
   <body>
-    <form action="/" method="GET">
+    <h1>Demo form</h1>
+    <form action="/" method="GET" >
+      <h2>Personal Details</h2>
       <label for="uname">Your name</label>
-      <input type="text" name="user-name" id="uname" />
+      <input type="text" name="user-name" id="uname" required placeholder="sd" />
       <label for="mail">Email</label>
       <input type="email" name="user-mail" id="mail" />
       <label for="uage">Age</label>
-      <input type="number" step="100" name="age" id="uage" />
+      <input type="number"  name="age" id="uage" min="18" max="100" />
+      <h2>Details</h2>
       <label for="psswd">Password</label>
-      <input type="password" id="psswd" name="password" />
+      <input type="password" id="psswd" name="password" minlength="7"/>
       <label for="dte">Date</label>
       <input type="date" name="date" id="dte" />
       <hr />
+      <label for="color">Your colour</label>
+      <select id="color" name="favourite-color">
+        <option value="r">red</option>
+        <option value="b">blue</option>
+        <option value="g">green</option>
+      </select>
+      <label for="txta">Your message</label>
+      <textarea id="txta"></textarea>
       <h2>Verification method</h2>
       <div class="radio">
         <input type="radio" name="veri" id="txt" value="text" />
@@ -36,13 +47,21 @@
         <input type="radio" name="veri" id="call" value="pcall" />
         <label for="call">Via phone call</label>
       </div>
+      <h2>Contact Method</h2>
       <div class="radio">
-        <input type="checkbox" id="terms"/>
+        <input type="checkbox" name="agree" id="terms" />
         <label for="terms">Sell your soul ?</label>
-
+      </div>
+      <div class="radio">
+        <input type="checkbox" name="contact" id="contact-mail" value="email" />
+        <label for="contact-mail">Contact via mail?</label>
+      </div>
+      <div class="radio">
+        <input type="checkbox" name="contact" id="contact-ph" value="phone" />
+        <label for="contact-ph">Contact via Phone</label>
       </div>
 
-      <button>Click me!</button>
+      <button type="submit">Click me!</button>
     </form>
   </body>
 </html>
