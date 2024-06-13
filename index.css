@@ -30,6 +30,9 @@ select:focus,input:focus,textarea:focus{
   color:rgb(49, 11, 93);
   border-color: rgb(30, 3, 60);
 }
+textarea{
+  resize: vertical;
+}
 button {
   font:inherit;
   display: block;
